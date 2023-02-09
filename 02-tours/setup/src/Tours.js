@@ -3,10 +3,10 @@ import Tour from "./Tour";
 const Tours = ({ tours }) => {
 	return (
 		<main>
-			{/* {tours.map((tour) => {
+			<h2>Hello Tours component</h2>
+			{tours.map((tour) => {
 				return <Tour />;
-			})} */}
-			<Tour />
+			})}
 		</main>
 	);
 };
