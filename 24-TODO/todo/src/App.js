@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import ClearIcon from "@mui/icons-material/Clear";
 
 function App() {
 	const [todos, setTodos] = useState([]);
@@ -24,9 +25,12 @@ function App() {
 				</div>
 				<ul>
 					{todos.map((todo, index) => (
-						<li key={index} style={{ textAlign: "left" }}>
-							{todo}
-						</li>
+						<div>
+							<li key={index} style={{ textAlign: "left" }}>
+								{todo}
+							</li>
+							<button>{ClearIcon}</button>
+						</div>
 					))}
 				</ul>
 			</header>
