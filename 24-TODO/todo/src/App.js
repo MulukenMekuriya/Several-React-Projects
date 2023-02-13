@@ -2,17 +2,10 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-	const [Todo, setTodo] = useState([]);
 	return (
 		<div className="App">
 			<header className="App-header">
-				<form action="">
-					<div>
-						<input type="text" value={Todo.values} /> <button>Add ToDo</button>
-					</div>
-					{/* This would be list of todos added from the state change */}
-					<div></div>
-				</form>
+				<h1 className="text-center mb-4">Todo List</h1>
 			</header>
 		</div>
 	);
