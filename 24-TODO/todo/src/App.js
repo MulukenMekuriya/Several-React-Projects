@@ -8,7 +8,7 @@ function App() {
 			<header className="App-header">
 				<form action="">
 					<div>
-						<input type="text" /> <button>Add ToDo</button>
+						<input type="text" value={Todo.values} /> <button>Add ToDo</button>
 					</div>
 					{/* This would be list of todos added from the state change */}
 					<div></div>
